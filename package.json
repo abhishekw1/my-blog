@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href 'https://abhishekw1.github.io/my-blog/'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "scully:build": "npx scully --project my-blog",
+    "scully:build": "npx scully --project my-blog --base-href 'https://abhishekw1.github.io/my-blog/'",
     "scully:serve": "npx scully serve --project my-blog"
   },
   "private": true,
