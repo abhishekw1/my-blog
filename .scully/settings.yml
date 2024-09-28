@@ -1,0 +1,11 @@
+identifier: m919l9w49ev415h7
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: my-blog
+homeFolder: D:\Projects\Angular\my-blog
+distFolder: dist/my-blog
+outDir: D:\Projects\Angular\my-blog\dist\my-blog
+handle404: ''
+allowErrorCollect: false

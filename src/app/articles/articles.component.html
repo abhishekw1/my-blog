@@ -1,0 +1,25 @@
+<section class="title container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>My Angular Blog </h1>
+      <div class="seperator"></div>
+      <p>Explore Angular Topics</p>
+    </div>
+  </div>
+</section>
+
+<!-- Start Blog Layout -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 item" *ngFor="let post of posts$ | async">
+      <div class="item-in">
+        <h4>{{post.title}}</h4>
+        <div class="seperator"></div>
+        <p>{{post['description']}}</p>
+        <a [routerLink]="post.route">Read More
+          <i class="fa fa-long-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
