@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-critters-container="">
+
+<head>
+  <meta name="generator" content="Scully 0.0.0">
+  <meta charset="utf-8">
+  <title>MyBlog</title>
+  <base href="https://abhishekw1.github.io/my-blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    @import"https://fonts.googleapis.com/css?family=Merriweather:400,300,700";
+    @import"https://fonts.googleapis.com/css?family=Montserrat:400,700";
+
+    body {
+      background: #fbfbfb;
+      font-family: Merriweather, serif;
+      font-size: 16px;
+      color: #777
+    }
+
+    @charset "UTF-8";
+
+    :root {
+      --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #6f42c1;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-black: #000;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40;
+      --bs-gray-100: #f8f9fa;
+      --bs-gray-200: #e9ecef;
+      --bs-gray-300: #dee2e6;
+      --bs-gray-400: #ced4da;
+      --bs-gray-500: #adb5bd;
+      --bs-gray-600: #6c757d;
+      --bs-gray-700: #495057;
+      --bs-gray-800: #343a40;
+      --bs-gray-900: #212529;
+      --bs-primary: #0d6efd;
+      --bs-secondary: #6c757d;
+      --bs-success: #198754;
+      --bs-info: #0dcaf0;
+      --bs-warning: #ffc107;
+      --bs-danger: #dc3545;
+      --bs-light: #f8f9fa;
+      --bs-dark: #212529;
+      --bs-primary-rgb: 13, 110, 253;
+      --bs-secondary-rgb: 108, 117, 125;
+      --bs-success-rgb: 25, 135, 84;
+      --bs-info-rgb: 13, 202, 240;
+      --bs-warning-rgb: 255, 193, 7;
+      --bs-danger-rgb: 220, 53, 69;
+      --bs-light-rgb: 248, 249, 250;
+      --bs-dark-rgb: 33, 37, 41;
+      --bs-primary-text-emphasis: #052c65;
+      --bs-secondary-text-emphasis: #2b2f32;
+      --bs-success-text-emphasis: #0a3622;
+      --bs-info-text-emphasis: #055160;
+      --bs-warning-text-emphasis: #664d03;
+      --bs-danger-text-emphasis: #58151c;
+      --bs-light-text-emphasis: #495057;
+      --bs-dark-text-emphasis: #495057;
+      --bs-primary-bg-subtle: #cfe2ff;
+      --bs-secondary-bg-subtle: #e2e3e5;
+      --bs-success-bg-subtle: #d1e7dd;
+      --bs-info-bg-subtle: #cff4fc;
+      --bs-warning-bg-subtle: #fff3cd;
+      --bs-danger-bg-subtle: #f8d7da;
+      --bs-light-bg-subtle: #fcfcfd;
+      --bs-dark-bg-subtle: #ced4da;
+      --bs-primary-border-subtle: #9ec5fe;
+      --bs-secondary-border-subtle: #c4c8cb;
+      --bs-success-border-subtle: #a3cfbb;
+      --bs-info-border-subtle: #9eeaf9;
+      --bs-warning-border-subtle: #ffe69c;
+      --bs-danger-border-subtle: #f1aeb5;
+      --bs-light-border-subtle: #e9ecef;
+      --bs-dark-border-subtle: #adb5bd;
+      --bs-white-rgb: 255, 255, 255;
+      --bs-black-rgb: 0, 0, 0;
+      --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+      --bs-body-font-family: var(--bs-font-sans-serif);
+      --bs-body-font-size: 1rem;
+      --bs-body-font-weight: 400;
+      --bs-body-line-height: 1.5;
+      --bs-body-color: #212529;
+      --bs-body-color-rgb: 33, 37, 41;
+      --bs-body-bg: #fff;
+      --bs-body-bg-rgb: 255, 255, 255;
+      --bs-emphasis-color: #000;
+      --bs-emphasis-color-rgb: 0, 0, 0;
+      --bs-secondary-color: rgba(33, 37, 41, .75);
+      --bs-secondary-color-rgb: 33, 37, 41;
+      --bs-secondary-bg: #e9ecef;
+      --bs-secondary-bg-rgb: 233, 236, 239;
+      --bs-tertiary-color: rgba(33, 37, 41, .5);
+      --bs-tertiary-color-rgb: 33, 37, 41;
+      --bs-tertiary-bg: #f8f9fa;
+      --bs-tertiary-bg-rgb: 248, 249, 250;
+      --bs-heading-color: inherit;
+      --bs-link-color: #0d6efd;
+      --bs-link-color-rgb: 13, 110, 253;
+      --bs-link-decoration: underline;
+      --bs-link-hover-color: #0a58ca;
+      --bs-link-hover-color-rgb: 10, 88, 202;
+      --bs-code-color: #d63384;
+      --bs-highlight-bg: #fff3cd;
+      --bs-border-width: 1px;
+      --bs-border-style: solid;
+      --bs-border-color: #dee2e6;
+      --bs-border-color-translucent: rgba(0, 0, 0, .175);
+      --bs-border-radius: .375rem;
+      --bs-border-radius-sm: .25rem;
+      --bs-border-radius-lg: .5rem;
+      --bs-border-radius-xl: 1rem;
+      --bs-border-radius-xxl: 2rem;
+      --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+      --bs-border-radius-pill: 50rem;
+      --bs-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+      --bs-box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+      --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .175);
+      --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, .075);
+      --bs-focus-ring-width: .25rem;
+      --bs-focus-ring-opacity: .25;
+      --bs-focus-ring-color: rgba(13, 110, 253, .25);
+      --bs-form-valid-color: #198754;
+      --bs-form-valid-border-color: #198754;
+      --bs-form-invalid-color: #dc3545;
+      --bs-form-invalid-border-color: #dc3545
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box
+    }
+
+    @media (prefers-reduced-motion:no-preference) {
+      :root {
+        scroll-behavior: smooth
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--bs-body-font-family);
+      font-size: var(--bs-body-font-size);
+      font-weight: var(--bs-body-font-weight);
+      line-height: var(--bs-body-line-height);
+      color: var(--bs-body-color);
+      text-align: var(--bs-body-text-align);
+      background-color: var(--bs-body-bg);
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    :root {
+      --bs-breakpoint-xs: 0;
+      --bs-breakpoint-sm: 576px;
+      --bs-breakpoint-md: 768px;
+      --bs-breakpoint-lg: 992px;
+      --bs-breakpoint-xl: 1200px;
+      --bs-breakpoint-xxl: 1400px
+    }
+  </style>
+  <link rel="stylesheet" href="styles.11df5d873b79e7f6.css" media="all" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="styles.11df5d873b79e7f6.css">
+  </noscript>
+  <style>
+    .img-fluid[_ngcontent-ng-c1937310395] {
+      width: 1rem
+    }
+  </style>
+  <script>window['ScullyIO'] = 'generated';</script>
+</head>
+
+<body scully-version="0.0.0">
+  <app-root _nghost-ng-c2531902774="" ng-version="16.1.2"><app-header _ngcontent-ng-c2531902774=""
+      _nghost-ng-c4202285300="">
+      <nav _ngcontent-ng-c4202285300="" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div _ngcontent-ng-c4202285300="" class="container-fluid"><a _ngcontent-ng-c4202285300="" routerlink="/"
+            routerlinkactive="router-link-active" class="navbar-brand router-link-active" href="/">My Angular
+            Blog</a><button _ngcontent-ng-c4202285300="" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" class="navbar-toggler"><span _ngcontent-ng-c4202285300=""
+              class="navbar-toggler-icon"></span></button>
+          <div _ngcontent-ng-c4202285300="" id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul _ngcontent-ng-c4202285300="" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li _ngcontent-ng-c4202285300="" class="nav-item"><a _ngcontent-ng-c4202285300="" routerlink="/"
+                  routerlinkactive="router-link-active" class="nav-link router-link-active" href="/">Articles</a></li>
+              <li _ngcontent-ng-c4202285300="" class="nav-item"><a _ngcontent-ng-c4202285300="" routerlink="/about"
+                  routerlinkactive="router-link-active" class="nav-link" href="/about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </app-header>
+    <div _ngcontent-ng-c2531902774="" class="container"><router-outlet
+        _ngcontent-ng-c2531902774=""></router-outlet><app-articles _nghost-ng-c888576452="">
+        <section _ngcontent-ng-c888576452="" class="title container">
+          <div _ngcontent-ng-c888576452="" class="row">
+            <div _ngcontent-ng-c888576452="" class="col-md-12">
+              <h1 _ngcontent-ng-c888576452="">My Angular Blog </h1>
+              <div _ngcontent-ng-c888576452="" class="seperator"></div>
+              <p _ngcontent-ng-c888576452="">Explore Angular Topics</p>
+            </div>
+          </div>
+        </section>
+        <div _ngcontent-ng-c888576452="" class="container">
+          <div _ngcontent-ng-c888576452="" class="row">
+            <div _ngcontent-ng-c888576452="" class="col-md-6 item">
+              <div _ngcontent-ng-c888576452="" class="item-in">
+                <h4 _ngcontent-ng-c888576452="">Angular and Scully</h4>
+                <div _ngcontent-ng-c888576452="" class="seperator"></div>
+                <p _ngcontent-ng-c888576452="">How to build a blog with Angular and Scully</p><a
+                  _ngcontent-ng-c888576452="" href="/posts/angular-and-scully">Read More <i _ngcontent-ng-c888576452=""
+                    class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+            <div _ngcontent-ng-c888576452="" class="col-md-6 item">
+              <div _ngcontent-ng-c888576452="" class="item-in">
+                <h4 _ngcontent-ng-c888576452="">Angular Dependency Injection Explained</h4>
+                <div _ngcontent-ng-c888576452="" class="seperator"></div>
+                <p _ngcontent-ng-c888576452="">A detailed guide to Angular’s dependency injection system and its
+                  benefits.</p><a _ngcontent-ng-c888576452="" href="/posts/angular-dependency-injection-explained">Read
+                  More <i _ngcontent-ng-c888576452="" class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+            <div _ngcontent-ng-c888576452="" class="col-md-6 item">
+              <div _ngcontent-ng-c888576452="" class="item-in">
+                <h4 _ngcontent-ng-c888576452="">Building Reusable Components in Angular</h4>
+                <div _ngcontent-ng-c888576452="" class="seperator"></div>
+                <p _ngcontent-ng-c888576452="">A step-by-step guide to creating reusable components in Angular.</p><a
+                  _ngcontent-ng-c888576452="" href="/posts/building-reusable-components-in-angular">Read More <i
+                    _ngcontent-ng-c888576452="" class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+            <div _ngcontent-ng-c888576452="" class="col-md-6 item">
+              <div _ngcontent-ng-c888576452="" class="item-in">
+                <h4 _ngcontent-ng-c888576452="">Getting Started with Angular Forms</h4>
+                <div _ngcontent-ng-c888576452="" class="seperator"></div>
+                <p _ngcontent-ng-c888576452="">Learn how to use Angular Reactive Forms and Template-Driven Forms
+                  effectively.</p><a _ngcontent-ng-c888576452="" href="/posts/getting-started-with-angular-forms">Read
+                  More <i _ngcontent-ng-c888576452="" class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+            <div _ngcontent-ng-c888576452="" class="col-md-6 item">
+              <div _ngcontent-ng-c888576452="" class="item-in">
+                <h4 _ngcontent-ng-c888576452="">Mastering Angular Change Detection</h4>
+                <div _ngcontent-ng-c888576452="" class="seperator"></div>
+                <p _ngcontent-ng-c888576452="">Optimize your Angular app by understanding change detection strategies.
+                </p><a _ngcontent-ng-c888576452="" href="/posts/mastering-angular-change-detection">Read More <i
+                    _ngcontent-ng-c888576452="" class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+            <div _ngcontent-ng-c888576452="" class="col-md-6 item">
+              <div _ngcontent-ng-c888576452="" class="item-in">
+                <h4 _ngcontent-ng-c888576452="">Understanding Angular Directives</h4>
+                <div _ngcontent-ng-c888576452="" class="seperator"></div>
+                <p _ngcontent-ng-c888576452="">An in-depth guide to Angular directives and how they enhance your
+                  application.</p><a _ngcontent-ng-c888576452="" href="/posts/understanding-angular-directives">Read
+                  More <i _ngcontent-ng-c888576452="" class="fa fa-long-arrow-right"></i></a>
+              </div>
+            </div><!---->
+          </div>
+        </div>
+      </app-articles><!----></div><app-footer _ngcontent-ng-c2531902774="" _nghost-ng-c1937310395="">
+      <div _ngcontent-ng-c1937310395="" class="container">
+        <footer _ngcontent-ng-c1937310395=""
+          class="d-flex justify-content-between align-items-center py-3 my-4 border-top">
+          <div _ngcontent-ng-c1937310395="" class="col-md-4 d-flex align-items-center">
+            <p _ngcontent-ng-c1937310395="" class="mb-0">abhishekw1</p><span _ngcontent-ng-c1937310395=""
+              class="text-muted"> © 2024 All Rights Reserved</span>
+          </div>
+          <ul _ngcontent-ng-c1937310395="" class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li _ngcontent-ng-c1937310395="" class="ms-3"><a _ngcontent-ng-c1937310395=""
+                href="https://github.com/abhishekw1" class="text-muted"><i _ngcontent-ng-c1937310395=""
+                  class="bi bi-github"></i></a></li>
+            <li _ngcontent-ng-c1937310395="" class="ms-3"><a _ngcontent-ng-c1937310395=""
+                href="https://x.com/abhishekw01" class="text-muted"><i _ngcontent-ng-c1937310395=""
+                  class="bi bi-twitter-x"></i></a></li>
+          </ul>
+        </footer>
+      </div>
+    </app-footer>
+  </app-root>
+  <script src="runtime.fcf2ea0855004cb8.js" type="module"></script>
+  <script src="polyfills.6566affecc5df53c.js" type="module"></script>
+  <script src="scripts.b2e0e15882d4bd55.js" defer=""></script>
+  <script src="main.2e62b4e2f8f6413f.js" type="module"></script>
+
+</body>
+
+</html>
