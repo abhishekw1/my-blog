@@ -22,10 +22,10 @@ jobs:
         run: npm install
 
       - name: Build Angular Project
-        run: npm run build
+        run: npm run build --base-href="https://abhishekw1.github.io/my-blog/"
 
       - name: Run Scully
-        run: npm run scully:build
+        run: npm run scully:build --base-href="https://abhishekw1.github.io/my-blog/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
