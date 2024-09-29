@@ -23,3 +23,6 @@ Scully is a static site generator specifically built for Angular. It transforms 
 
 ## Conclusion
 By combining the power of Angular and Scully, you can build fast, SEO-friendly static websites with all the flexibility and features of a modern JavaScript framework. Scully extends Angular's capabilities to support the Jamstack architecture, making it a perfect choice for building blogs, marketing sites, and other content-driven applications.
+
+
+## [Project Link click here](https://abhishekw1.github.io/my-blog/articles)
